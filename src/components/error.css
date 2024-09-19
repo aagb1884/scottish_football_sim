@@ -1,0 +1,94 @@
+.errorScreen-container {
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    animation: mainComponent-load 400ms ease-in 200ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+    background-color: #022172;
+    height: 100vh;
+    width: 100%;
+    border: groove white 10px;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.error-home {
+  color: #fdfdfd;
+} 
+
+.errorScreen-cover {
+    height: 40vh;
+    width: 95vw;
+    margin-bottom: 2vh;
+    max-width: 992px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .errorScreen-image {
+    animation: imageMove 30s linear infinite;
+    background-size: cover;
+    background-position: 50%;
+    max-height: 1024px;
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    scale: 1.2;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .errorScreen-image:nth-child(1) {
+    background-image: url(../images/error.jpeg);
+  }
+  
+  .errorScreen-image:nth-child(2) {
+    animation-delay: 10s;
+    background-image: url(../images/error.jpeg);
+  }
+  
+  .errorScreen-image:nth-child(3) {
+    animation-delay: 20s;
+    background-image: url(../images/error.jpeg);
+  }
+  
+  
+  @media screen and (min-height: 768px) {
+    .errorScreen-container {
+      margin-top: 10vh;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .errorScreen-container {
+      margin-top: 3vh;
+    }
+  
+    .errorScreen-cover {
+      height: 50vh;
+    }
+  }
+  
+  @keyframes imageMove {
+    25% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.8;
+      scale: 1;
+    }
+  
+    60% {
+      opacity: 0;
+    }
+  }

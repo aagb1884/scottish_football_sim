@@ -1,0 +1,160 @@
+.gameScreen-container {
+   border: solid 2px #fff;
+ 
+}
+.gameScreen-container.flicker-active {
+   border: solid 2px#fff;
+    box-shadow:
+    inset 80px 0 140px rgb(83, 61, 83),
+    inset -80px 0 140px rgb(77, 142, 142)
+}
+
+@keyframes flicker {
+  0% {
+    box-shadow: inset 80px 0 140px rgb(83, 61, 83),
+                inset -80px 0 140px rgb(77, 142, 142);
+  }
+  25% {
+    box-shadow: inset 80px 0 150px rgb(62, 46, 62),
+                inset -80px 0 150px rgb(77, 142, 142);
+  }
+  50% {
+    box-shadow: inset 80px 0 180px rgb(83, 61, 83),
+                inset -80px 0 180px rgb(63, 117, 117);
+  }
+  75% {
+    box-shadow: inset 80px 0 160px rgb(83, 61, 83),
+                inset -80px 0 160px rgb(77, 142, 142);
+  }
+  100% {
+    box-shadow: inset 60px 0 150px rgb(83, 61, 83),
+                inset -60px 0 150px rgb(77, 142, 142);
+  }
+}
+
+.flicker-active {
+  animation: flicker 2s infinite alternate; /* Adjust duration and timing as needed */
+}
+
+.staticScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .staticScreen img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flickering-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  .flickering-screen img {
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    position: relative;
+    z-index: 1; 
+  }
+
+.togglesBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flickering-toggle, .audio-toggle{
+  display: flex;
+  align-items: center;
+}
+
+  .toggle {
+    position: relative;
+    width: 48px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  .toggle label{
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle label span {
+    margin: 0 auto;
+  }
+  
+  /* Hide default HTML checkbox */
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(38,39,83);;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(38,39,83);;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  

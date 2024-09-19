@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import './derek_adams_simulator/DAApp.css';
+import HomePage from './HomePage';
+import AboutScreen from './AboutScreen/AboutScreen'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DAStartScreen from './derek_adams_simulator/pages/StartScreen/DAStartScreen';
+import DAGameScreen from './derek_adams_simulator/pages/GameScreen/DAGameScreen';
+import DACreditsScreen from './derek_adams_simulator/pages/CreditsScreen/DACreditsScreen';
+import Error from './components/Error';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/derekadams" element={<DAStartScreen />} />
+          <Route path="/derekadams/game" element={<DAGameScreen />} />
+          <Route path="/derekadams/credits" element={<DACreditsScreen />} />
+          <Route path="/about" element={<AboutScreen />} />
+          <Route path="*" element={<Error />} />
+          {/* <Route path="/rangers" element={<StartScreen />} />
+          <Route path="/rangers/game" element={<GameScreen />} />
+          <Route path="/rangers/credits" element={<CreditsScreen />} /> */}
+        </Routes>
+      </Router>
+    </>
     </div>
   );
 }

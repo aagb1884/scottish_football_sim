@@ -1,0 +1,89 @@
+.Heading {
+  line-height: 1;
+  text-align: center;
+}
+
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .scottish-football {
+    background-image: url("../images/scottish_football.gif");
+    background-size: 60% cover;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    line-height: normal;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+.simulators {
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: 
+      url("../images/Digital_rain.gif");
+    background-size: 20% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+    animation: zoom-in 4s ease infinite;
+  }
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+@media screen and (max-width: 1174px) {
+  .scottish-football, .simulators {
+    font-size: 5rem;
+  }
+} 
+
+@media screen and (max-width: 768px) {
+  .scottish-football, .simulators {
+    font-size: 3rem;
+  }
+  .Heading {
+    line-height: 0.1;
+    padding-bottom: 5%;
+  }
+  .scottish-football {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-size: auto;
+      background-position: left;
+      background-image: url("../images/scottish_football.gif");
+    }
+  }
+} 
+  
+  /* height */
+
+  @media screen and (max-height: 667px) {
+    .scottish-football, .simulators {
+      font-size: 3.1rem;
+    }
+    .Heading {
+      line-height: 0.1;
+      padding-bottom: 5%;
+    }
+    .scottish-football {
+      @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-size: 100% auto;
+        background-position: left;
+        background-image: url("../images/scottish_football.gif");
+      }
+    }
+  }
