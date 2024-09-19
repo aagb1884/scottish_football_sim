@@ -1,5 +1,5 @@
 {
-  "homepage": "https://aagb1884.github.io/",
+  "homepage": "https://scottish-football-simulators.co.uk/",
   "name": "scottish_football_simulator",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME build/CNAME",
     "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
