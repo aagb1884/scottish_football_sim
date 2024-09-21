@@ -7,17 +7,20 @@ import DAStartScreen from './derek_adams_simulator/pages/StartScreen/DAStartScre
 import DAGameScreen from './derek_adams_simulator/pages/GameScreen/DAGameScreen';
 import DACreditsScreen from './derek_adams_simulator/pages/CreditsScreen/DACreditsScreen';
 import Error from './components/Error';
+import HibsMergePage from './hibs_manager_merger/pages/index';
+import GameProvider from './hibs_manager_merger/context/game-context';
 
 function App() {
   return (
     <div className="App">
-    <>
+    <GameProvider>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/derekadams" element={<DAStartScreen />} />
           <Route path="/derekadams/game" element={<DAGameScreen />} />
           <Route path="/derekadams/credits" element={<DACreditsScreen />} />
+          <Route path="/hibs-merger" element={<HibsMergePage />} />
           <Route path="/about" element={<AboutScreen />} />
           <Route path="*" element={<Error />} />
           {/* <Route path="/rangers" element={<StartScreen />} />
@@ -25,7 +28,7 @@ function App() {
           <Route path="/rangers/credits" element={<CreditsScreen />} /> */}
         </Routes>
       </Router>
-    </>
+    </GameProvider>
     </div>
   );
 }

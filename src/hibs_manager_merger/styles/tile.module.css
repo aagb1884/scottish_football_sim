@@ -1,0 +1,106 @@
+.tile {
+  position: absolute;
+  width: calc(var(--pixel-size) * 8);
+  height: calc(var(--pixel-size) * 8);
+  margin: calc(var(--pixel-size) * 0.5);
+  border-radius: calc(var(--pixel-size) * 0.5);
+  background: var(--tile-background);
+  color: var(--primary-text-color);
+  font-size: calc(var(--pixel-size) * 2);
+  line-height: calc(var(--pixel-size) * 8);
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #461B71;
+  text-align: center;
+  transition-property: left, top, transform;
+  transition-duration: 200ms, 200ms, 100ms;
+}
+
+@media (min-width: 512px) {
+  .tile {
+    width: calc(var(--pixel-size) * 12.5);
+    height: calc(var(--pixel-size) * 12.5);
+    margin: calc(var(--pixel-size) * 1);
+    font-size: calc(var(--pixel-size) * 6);
+    line-height: calc(var(--pixel-size) * 12.5);
+  }
+}
+
+/* -=-=-=- START OF TEXT COLOR -=-=-=- */
+.tile8,
+.tile16,
+.tile32,
+.tile64,
+.tile128,
+.tile256,
+.tile512,
+.tile1024 {
+  color: var(--secondary-text-color);
+}
+/* -=-=-=-= END OF TEXT COLOR =-=-=-=- */
+
+/* -=-=-=- START OF TEXT SIZE -=-=-=- */
+.tile128,
+.tile256,
+.tile512 {
+  font-size: calc(var(--pixel-size) * 3.25);
+}
+
+.tile1024 {
+  font-size: calc(var(--pixel-size) * 2.75);
+}
+
+@media (min-width: 512px) {
+  .tile128,
+  .tile256,
+  .tile512 {
+    font-size: calc(var(--pixel-size) * 5.5);
+  }
+
+  .tile1024 {
+    font-size: calc(var(--pixel-size) * 4);
+  }
+}
+/* -=-=-=-= END OF TEXT SIZE =-=-=-=- */
+
+/* -=-=-=- START OF BACKGROUND IMAGES -=-=-=- */
+.tile2 {
+  background-image: url('../public/fenlon.jpg');
+}
+.tile4 {
+  background-image: url('../public/butcher.jpg');
+}
+.tile8 {
+  background-image: url('../public/stubbs.jpg');
+}
+.tile16 {
+  background-image: url('../public/lennon.jpg');
+}
+.tile32 {
+  background-image: url('../public/heckingbottom.png');
+}
+.tile64 {
+  background-image: url('../public/ross.jpg');
+}
+.tile128 {
+  background-image: url('../public/maloney.jpg');
+}
+.tile256 {
+  background-image: url('../public/johnson.jpg');
+}
+.tile512 {
+  background-image: url('../public/montgomery.png');
+}
+.tile1024 {
+  background-image: url('../public/gray.png');
+}
+
+.tile2, .tile4, .tile8, .tile16, .tile32, .tile64,
+.tile128, .tile256, .tile512, .tile1024 {
+  background-size: 100%;
+  background-position: center;
+  box-shadow:
+    0 0 30px 10px rgba(243, 215, 116, 0.2381),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+}
+
