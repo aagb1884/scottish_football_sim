@@ -29,7 +29,15 @@ function HomePage() {
         </div>
 
         <div className="hp-button-div">
-      {/* <Link className="home-page-link" to="/rangers-management-simulator"> */}
+        <Link className="home-page-link" to="/hibs-merger"> 
+        <div className="hp-button-div-hibs">
+         <div className="hp-button-text1">The Hibs Manager Merger</div> 
+        </div>
+        </Link>
+        </div>
+
+        <div className="hp-button-div">
+      <Link className="home-page-link" to="/rangers">
       <img    
         src={jason} 
         alt="Rangers Management Simulator link"
@@ -37,7 +45,7 @@ function HomePage() {
         border="0"
         className="hp-button-image"/>
         <div className="hp-button-text2">Rangers Management Simulator</div>   
-      {/* </Link> */}
+      </Link>
         </div>
       </div>
 

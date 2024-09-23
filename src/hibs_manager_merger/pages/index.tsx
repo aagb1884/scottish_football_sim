@@ -22,7 +22,7 @@ export default function HibsMergePage() {
           <p>You have a 4 x 4 grid, starting with two tiles showing a picture of Pat Fenlon.</p>
           <p>You can either use the arrow keys on the keyboard or flick your touchscreen in the direction you want all the tiles to move.</p>
           <p>If two identical tiles collide, they will merge into a new tile showing the next Hibs manager.</p>
-          <p>The aim of the game is to reach Jack Ross.</p>
+          <p>The aim of the game is to reach David Gray.</p>
           </div>
         )}
       </div>

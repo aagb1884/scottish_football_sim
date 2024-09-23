@@ -45,7 +45,7 @@
 @media screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
-    height: 18vh;
+    height: 15vh;
     padding: 1%;
   }
 }

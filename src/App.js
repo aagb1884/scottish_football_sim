@@ -9,6 +9,7 @@ import DACreditsScreen from './derek_adams_simulator/pages/CreditsScreen/DACredi
 import Error from './components/Error';
 import HibsMergePage from './hibs_manager_merger/pages/index';
 import GameProvider from './hibs_manager_merger/context/game-context';
+import RangersStartScreen from './rangers_management_simulator/rangers-home';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
           <Route path="/hibs-merger" element={<HibsMergePage />} />
           <Route path="/about" element={<AboutScreen />} />
           <Route path="*" element={<Error />} />
-          {/* <Route path="/rangers" element={<StartScreen />} />
-          <Route path="/rangers/game" element={<GameScreen />} />
+          <Route path="/rangers" element={<RangersStartScreen /> } />
+          {/* <Route path="/rangers/game" element={<GameScreen />} />
           <Route path="/rangers/credits" element={<CreditsScreen />} /> */}
         </Routes>
       </Router>

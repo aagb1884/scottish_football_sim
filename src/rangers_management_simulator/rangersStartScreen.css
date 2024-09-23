@@ -1,0 +1,160 @@
+.gers-startScreen-container {
+    height: 100%;
+    font-family: "Poppins", monospace;
+    color: var(--primaryColor);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    animation: mainComponent-load 400ms ease-in 200ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+    /* background-color: #0033A0; */
+    background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,51,160,1) 28%, rgba(0,118,200,1) 60%, rgba(0,212,255,1) 100%);
+  }
+  
+  .gers-startScreen-cover {
+    height: 40vh;
+    width: 95vw;
+    margin-bottom: 2vh;
+    max-width: 992px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gers-startScreen-image {
+    animation: imageMove 30s linear infinite;
+    background-size: cover;
+    background-position: 50%;
+    max-height: 1024px;
+    inset: 0;
+    opacity: 0;
+    position: absolute;
+    scale: 1.2;
+    max-width: 800px;
+    margin: auto;
+  }
+   
+  .gers-startScreen-image:nth-child(1) {
+    background-image: url(../rangers_management_simulator/images/ibrox.jpg);
+  }
+  
+  .gers-startScreen-image:nth-child(2) {
+    animation-delay: 10s;
+    background-image: url(../rangers_management_simulator/images/ibrox_nightmare.jpg);
+  }
+  
+  .gers-startScreen-image:nth-child(3) {
+    animation-delay: 20s;
+    background-image: url(../rangers_management_simulator/images/ibrox.jpg);
+  }
+  
+  
+  @media screen and (min-height: 768px) {
+    .gers-startScreen-container {
+      margin-top: 10vh;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .gers-startScreen-container {
+      margin-top: 3vh;
+    }
+  
+    .gers-startScreen-cover {
+      height: 50vh;
+    }
+  }
+  
+  @keyframes imageMove {
+    25% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0.8;
+      scale: 1;
+    }
+  
+    60% {
+      opacity: 0;
+    }
+  }
+  
+  .gers-startScreen-title {
+    font-size: 2.5rem;
+    margin: 5;
+    color: white;
+    text-shadow: 1px 1px red;
+  }
+  
+  .gers-startScreen-subtitle {
+    color: white;
+    text-shadow: 1px 1px red;
+  }
+  
+  .gers-startScreen-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    border-top: 1px solid var(--secondaryColor);
+    border-bottom: 1px solid var(--secondaryColor);
+  }
+  
+  .gers-startScreen-btn {
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--primaryColor);
+    text-decoration: none;
+    padding: 0.5rem 2.5rem;
+    margin: 0.5rem;
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: btn-load 1s ease-in;
+  }
+  
+  .gers-startScreen-btn:hover {
+    color: var(--primaryColor);
+    box-shadow: inset 200px 0 0 0 var(--secondaryColor);
+  }
+  
+  @media screen and (max-width: 200px), screen and (max-height: 200px) {
+    .gers-startScreen-container {
+      height: auto;
+    }
+  }
+  
+  @keyframes startScreen-load {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes btn-load {
+    0% {
+      transform: scale(0);
+    }
+  
+    90% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gers-startScreen-title {
+      font-size: 2rem;
+    }
+  } 
