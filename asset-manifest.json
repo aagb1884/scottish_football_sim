@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8d3ebcd.css",
-    "main.js": "/static/js/main.48066fae.js",
+    "main.css": "/static/css/main.63dfaf0c.css",
+    "main.js": "/static/js/main.48ef68e9.js",
     "static/js/453.ccd1b2a7.chunk.js": "/static/js/453.ccd1b2a7.chunk.js",
     "static/media/scottish_football.gif": "/static/media/scottish_football.0dcb0f5d00c16600b119.gif",
     "static/media/Tynecastle_Park.jpg": "/static/media/Tynecastle_Park.b8d4c73761ca9658b7e8.jpg",
@@ -65,12 +65,12 @@
     "static/media/turkey.jpg": "/static/media/turkey.b3cf71273217f6f63c91.jpg",
     "static/media/meh.jpg": "/static/media/meh.72e52a313195c245f764.jpg",
     "index.html": "/index.html",
-    "main.c8d3ebcd.css.map": "/static/css/main.c8d3ebcd.css.map",
-    "main.48066fae.js.map": "/static/js/main.48066fae.js.map",
+    "main.63dfaf0c.css.map": "/static/css/main.63dfaf0c.css.map",
+    "main.48ef68e9.js.map": "/static/js/main.48ef68e9.js.map",
     "453.ccd1b2a7.chunk.js.map": "/static/js/453.ccd1b2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8d3ebcd.css",
-    "static/js/main.48066fae.js"
+    "static/css/main.63dfaf0c.css",
+    "static/js/main.48ef68e9.js"
   ]
 }
