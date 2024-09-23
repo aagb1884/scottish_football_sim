@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.63dfaf0c.css",
-    "main.js": "/static/js/main.48ef68e9.js",
+    "main.css": "/static/css/main.7f60ac3e.css",
+    "main.js": "/static/js/main.a7b8e153.js",
     "static/js/453.ccd1b2a7.chunk.js": "/static/js/453.ccd1b2a7.chunk.js",
     "static/media/scottish_football.gif": "/static/media/scottish_football.0dcb0f5d00c16600b119.gif",
     "static/media/Tynecastle_Park.jpg": "/static/media/Tynecastle_Park.b8d4c73761ca9658b7e8.jpg",
@@ -21,6 +21,8 @@
     "static/media/christmas_present.jpg": "/static/media/christmas_present.46d9172d5d0f812e5a0e.jpg",
     "static/media/greetings.jpg": "/static/media/greetings.e54c6aaecc18d1be0f68.jpg",
     "static/media/error.jpeg": "/static/media/error.d270cf93ed8c7af96c5b.jpeg",
+    "static/media/ibrox_nightmare.jpg": "/static/media/ibrox_nightmare.036664c4c3722bc25077.jpg",
+    "static/media/ibrox.jpg": "/static/media/ibrox.7a65882695918673eaae.jpg",
     "static/media/F._21r._Wyvern.jpg": "/static/media/F._21r._Wyvern.c30ca6b66f59813d2a0f.jpg",
     "static/media/huge_mistake.jpg": "/static/media/huge_mistake.ef36b03bb45baa8c1e95.jpg",
     "static/media/Giulio_del_Torre_Zwei_raufende_Buben_1927.jpg": "/static/media/Giulio_del_Torre_Zwei_raufende_Buben_1927.745cbaffada29b0b976a.jpg",
@@ -65,12 +67,12 @@
     "static/media/turkey.jpg": "/static/media/turkey.b3cf71273217f6f63c91.jpg",
     "static/media/meh.jpg": "/static/media/meh.72e52a313195c245f764.jpg",
     "index.html": "/index.html",
-    "main.63dfaf0c.css.map": "/static/css/main.63dfaf0c.css.map",
-    "main.48ef68e9.js.map": "/static/js/main.48ef68e9.js.map",
+    "main.7f60ac3e.css.map": "/static/css/main.7f60ac3e.css.map",
+    "main.a7b8e153.js.map": "/static/js/main.a7b8e153.js.map",
     "453.ccd1b2a7.chunk.js.map": "/static/js/453.ccd1b2a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63dfaf0c.css",
-    "static/js/main.48ef68e9.js"
+    "static/css/main.7f60ac3e.css",
+    "static/js/main.a7b8e153.js"
   ]
 }
