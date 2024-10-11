@@ -53,7 +53,7 @@ import intenseSheen from '../images/intense_sheen.jpg';
 import sadSheen from '../images/sad_sheen.jpg';
 import sheenScores from '../images/sheen_scores.jpg';
 import sheenBoot from '../images/sheen_boot.png';
-import wickerMan from '../images/0.2014_Wickerman_Fest_of_Fire_celebrated_at_Kiczera_Hill_in_Wola_Sękowa,_Sanok.jpg';
+import wickerMan from '../images/0.2014_Wickerman_Fest_of_Fire.jpg';
 import halfMast from '../images/Union_Jack_Half-mast.jpg';
 import secretPassage1 from '../images/secretPassage1.jpg';
 import secretPassage2 from '../images/secretPassage2.jpg';
