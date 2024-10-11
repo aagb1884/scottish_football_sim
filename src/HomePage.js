@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import deek from './derek_adams_simulator/images/d-adams.jpeg';
-import jason from './images/coming_soon.jpg'
+import jason from './images/we_ve_got_jason_cummings_by_broomieart_dc1jjpg-fullview.jpg';
 import Footer from "./components/Footer";
 import './homepage.css'
 import Title from "./components/Title";

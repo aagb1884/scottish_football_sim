@@ -1,0 +1,17 @@
+.gers-footer-container {
+  margin: 3vh 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gers-footer-link {
+  letter-spacing: normal;
+  color: var(--gersSecondaryColor);
+  text-decoration: none;
+}
+
+.gers-footer-link:hover {
+  color: var(--gersSecondaryColor);
+  border-bottom: 1px solid var(--gersSecondaryColor);
+}

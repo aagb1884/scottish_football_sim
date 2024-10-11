@@ -1,0 +1,30 @@
+.gers-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1px;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.gers-header-link {
+  color: var(--gersPrimaryColor);
+  text-decoration: none;
+  transition: 0.5s;
+  margin: 0 2px;
+  z-index: 1;
+}
+
+.gers-header-link:hover {
+  color: var(--gersSecondaryColor);
+  transition: 0.5s;
+}
+
+@media (max-width: 1024px) {
+  .gers-header-container {
+    font-size: 0.9rem;
+  }
+}

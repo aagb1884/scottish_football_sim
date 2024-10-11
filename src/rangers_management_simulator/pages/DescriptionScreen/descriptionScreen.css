@@ -1,0 +1,78 @@
+.gers-descriptionScreen-container {
+  font-family: "Poppins", monospace;
+  color: var(--gersPrimaryColor);
+  animation: descriptionScreen-load 400ms ease-in 200ms;
+  animation-fill-mode: forwards;
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.gers-descriptionScreen-header {
+  border-top: 5px solid var(--gersSecondaryColor);
+  margin: 0;
+  padding: 2vh;
+  text-align: center;
+}
+
+.gers-descriptionScreen-text {
+  
+  font-size: 1.4rem;
+  padding: 2vh 2vw;
+  margin: 0 1vw;
+  border-top: 5px solid var(--gersSecondaryColor);
+  border-bottom: 5px solid var(--gersSecondaryColor);
+}
+
+.gers-descriptionScreen-image {
+  display: block;
+  border: 5px solid var(--gersSecondaryColor);
+  width: 512px;
+  max-width: 90vw;
+  object-fit: cover;
+  margin: 0 auto 2vh;
+}
+
+.gers-descriptionScreen-link {
+  color: var(--gersSecondaryColor);
+  text-shadow: 1px white;
+  text-decoration: none;
+}
+
+.gers-descriptionScreen-link:hover {
+  color: var(--gersSecondaryColor);
+  text-decoration: underline;
+}
+
+a:link {
+  color: var(--gersSecondaryColor);
+}
+a:visited {
+  color: rgb(152, 2, 2);
+  text-shadow: 1px white;
+}
+
+.gers-descriptionScreen-subHeader {
+    font-size: 1.4rem;
+}
+.gers-techStack-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gers-descriptionScreen-socialMediaLink {
+  border-top: 1px solid var(--gersSecondaryColor);
+  padding-top: 1rem;
+}
+
+@keyframes descriptionScreen-load {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
