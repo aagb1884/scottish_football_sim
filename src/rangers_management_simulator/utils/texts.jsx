@@ -142,11 +142,11 @@ const signings = [
   {"name": "Morrissey", "position": ", a Right Winger",  "image": morrissey, "transfer": "in return for releasing his latest album"},
   {"name": "Martin Luther", "position": ", a Right Back",  "image": martinLuther, "transfer": "for £4.7 million"},
   {"name": "the Krankies", "position": ", a Carrilero",  "image": krankies, "transfer": "on loan from the Birmingham Hippodrome"},
-  {"name": "Craig Charles", "position": ", a Sweeper Keeper",  "image": craigCharles, "transfer": "f"},
+  {"name": "Craig Charles", "position": ", a Sweeper Keeper",  "image": craigCharles, "transfer": "in return for the abstract concept of Funk"},
   {"name": "Joffrey", "position": ", a Left Wing Back",  "image": joffrey, "transfer": "on loan"},
   {"name": "Geri Halliwell", "position": ", a Ball Winning midfielder",  "image": geri, "transfer": "on loan"},
   {"name": "Jardel (now)", "position": ", a Centre Forward",  "image": jardel, "transfer": "on loan"},
-  {"name": "Davros, creator of the Daleks", "position": ", a Segundo Volante",  "image": davros, "transfer": "on loan"},
+  {"name": "Davros (creator of the Daleks)", "position": ", a Segundo Volante",  "image": davros, "transfer": "on loan"},
   {"name": "this old guy in a nappy", "position": ", an Inverted Full-Back",  "image": nappy, "transfer": "on loan"},
   {"name": "the Jolly Green Giant", "position": ", a Roaming Playmaker",  "image": jollyGreen, "transfer": "on loan"},
   {"name": "Rupert Grint", "position": ", an Anchor Man",  "image": grint, "transfer": "on loan"},
@@ -2015,14 +2015,14 @@ You eat the wizard.`,
         nextText: 92
             },
             {
-              text: "Break the staff over your knee and walk away.",
+              text: "Just walk away.",
         nextText: 92
                     }
           ],
   },
 {
     id: 92,
-    text: "You’re in a Morrisons because you’ve heard they do a flavour of Stoats Porridge bars that you can’ get in Tesco. Do you sign up for a Morrisons Card?",
+    text: "You’re in a Morrisons because you’ve heard they do a flavour of Stoats Porridge bars that you can’t get in Tesco. Do you sign up for a Morrisons Card?",
     image: more,
     alt: "A Morrisons More card.",
     // shotInDickUpdate: 0
