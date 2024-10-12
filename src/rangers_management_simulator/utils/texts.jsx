@@ -66,7 +66,6 @@ import eternalNight from '../images/eternal_night.png';
 import threeWiseMen from '../images/three-wise-men.jpg';
 import lem from '../images/lem.png';
 import treble from '../images/treble.jpeg';
-import fenton from '../images/fenton.gif';
 import orly from '../images/O_rly.png';
 import awkward from '../images/awkward.gif';
 import portal from '../images/portal.png';
@@ -138,7 +137,6 @@ import woodenThrone from '../images/woodenThrone.png';
 import bibbleConnor from '../images/biblically_accurate_cb.png';
 
 const signings = [
-  {"name": "Fenton", "position": ", a Pressing Forward",  "image": fenton, "transfer": "on a leash"},
   {"name": "Frida Kahlo", "position": ", an Attacking Midfielder",  "image": frida, "transfer": "on loan"},
   {"name": "Spider-man 3", "position": ", a Target Man",  "image": spiderman3, "transfer": "for £258 million"},
   {"name": "Morrissey", "position": ", a Right Winger",  "image": morrissey, "transfer": "in return for releasing his latest album"},
@@ -1501,7 +1499,7 @@ text: "Take care of Gerry first.",
 
 {
     id: 67,
-    text: `Gerry Britton hears your movement, and uses his gangly limbs – which seem to be stretching somehow – to reach out and grab you. 
+    text: `Gerry Britton scorns your strategy, and uses his gangly limbs – which seem to be stretching somehow – to reach out and grab you. 
     
     His dark eyes show nothing but contempt as he drags you towards the gaping maw of Kingsley’s mouth.`,
     image: kingsleyMouth,

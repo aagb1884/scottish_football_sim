@@ -25,18 +25,24 @@ function RangersGameScreen() {
 
   const shotMessages = {
     2: "Good for you",
-    3: "Yeah, don't let them kink shame you.",
+    3: "Don't let them kink shame you.",
     5: "If it feels good and you're consenting how can it be wrong?",
+    8: "'Does this work on HMRC?'",
     10: "'Yeah come on Craig ruin me like you ruined the football club.'",
     15: "'More I say. More.'",
     20: "'WOOOOOOOOAaaa little to the left'",
     25: "'Presumably if you're still shooting me in the dick you're also into it?'",
     26: "'Yeah you're into it.'",
     30: "'Is this a spell anyone can learn?'",
+    34: `'Give me a minute...'
+    
+          'Okay, go again.'`,
     40: "'Oooh right in the Netherbrox.'",
     50: "'I've reached the melancholy stage where I know my groin will never feel this good again.'",
     60: "'God I hope I never get used to this.'",
+    70: "You're fairly sure your perineum could power the national grid.",
     75: "'Do you have a favourite type of pie?'",
+    83: "Craig Whyte praises your commitment, but wonders if you want to stop yet?",
     90: "'wrstfglhnnnhgnnn'",
     100: `You have been shot in the dick by Craig Whyte one hundred times. Please download this certificate: 
     
