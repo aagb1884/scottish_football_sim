@@ -22,9 +22,9 @@ function RangersCreditsScreen() {
       <div className="gers-creditsScreen-content"> 
         
         <br />
-        
-        <ul className="gers-imageCreditsList">
         <h2 className="gers-creditsScreen-text">Image credits</h2>
+        <ul className="gers-imageCreditsList">
+        
           <li><a className="gers-creditsScreen-pictureCredit"
                 href="https://www.flickr.com/photos/carnivillain/4830623429/"
                 target="_blank"
@@ -337,8 +337,9 @@ function RangersCreditsScreen() {
                 rel="noopener noreferrer">
            Wooden Throne by Thomas Quine</a> on <a href="https://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons 2.0 Deed</a>.
           </li>
-          All image editing done with <a href="https://www.gimp.org/">GIMP</a>.
-          Lovecraftian translations done with <a href="https://lingojam.com/RLyehian">Lingo Jam</a>.
+          <p>All image editing done with <a href="https://www.gimp.org/">GIMP</a>.</p>
+          <p>Lovecraftian translations done with <a href="https://lingojam.com/RLyehian">Lingo Jam</a>.</p>
+          <p>With thanks to Neil Stewart and the Senior Lecturer in Liberal Arts at the Queen Mary University of London.</p>
         </ul>
       </div>
           

@@ -68,6 +68,9 @@ a:visited {
 
 .gers-imageCreditsList {
   line-height: 3;
+  list-style: none;
+  text-align: left;
+  padding: 10px;
   margin-bottom: 15px;
   border-style: outset;
   background-color: rgba(8, 3, 117, 0.5);
