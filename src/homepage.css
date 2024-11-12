@@ -139,8 +139,15 @@
     position: relative;
     text-align: center;
   }
+
+  .hp-row1, .hp-row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
   
-  @media screen and (max-width: 1024px),
+  @media screen and (max-width: 1020px),
         screen and (max-height: 600px) {
           .hp-links-c2 {
             width: 100%;
@@ -150,19 +157,35 @@
           .hp-button-text2 {
             left: 15%;
           }
+          .hp-button-image, .hp-button-div-hibs, .hp-button-image-hibs {
+            max-width: 20vh;
+            height: 150px;
+          }
         }
 
-  @media screen and (max-width: 1368px),
-        screen and (max-height: 800px) {
+  @media screen and (max-width: 1180px),
+        screen and (max-height: 820px) {
           .hp-links-c2 {
             width: 100%;
             flex-direction: column;
             justify-content: space-around;
           }
+          .hp-button-image, .hp-button-div-hibs, .hp-button-image-hibs {
+            max-width: 25vh;
+            height: 150px;
+          }
         }
 
+        @media (orientation: landscape) {
+          .home-page-content {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
 
-  @media screen and (max-width: 1024px) {
+  @media (orientation: portrait),
+  screen and (max-width: 1024px)
+   {
     .home-page-content {
       flex-direction: column;
       align-items: center;
@@ -170,8 +193,8 @@
     .home-page-animation{
       background-size: 100%;
     }
-    .hp-button-image {
-      width: 30vh;
+    .hp-button-image, .hp-button-div-hibs, .hp-button-image-hibs {
+      max-width: 20vh;
       height: 150px;
     }
     .hp-button-text1, .hp-button-text2 {
@@ -206,5 +229,12 @@
   .hp-button-text2 {
     left: 30%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .hp-button-image, .hp-button-div-hibs, .hp-button-image-hibs {
+    width: 17vh;
+    height: 15vh;
   }
 }

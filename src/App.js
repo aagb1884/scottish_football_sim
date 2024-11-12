@@ -12,6 +12,7 @@ import GameProvider from './hibs_manager_merger/context/game-context';
 import RangersStartScreen from './rangers_management_simulator/pages/StartScreen/RangersStartScreen';
 import RangersGameScreen from './rangers_management_simulator/pages/GameScreen/RangersGameScreen';
 import RangersCreditsScreen from './rangers_management_simulator/pages/CreditsScreen/RangersCreditsScreen';
+import Stramash from './stramash/stramash';
 
 function App() {
   return (
@@ -24,11 +25,13 @@ function App() {
           <Route path="/derekadams/game" element={<DAGameScreen />} />
           <Route path="/derekadams/credits" element={<DACreditsScreen />} />
           <Route path="/hibs-merger" element={<HibsMergePage />} />
-          <Route path="/about" element={<AboutScreen />} />
-          <Route path="*" element={<Error />} />
           <Route path="/rangers" element={<RangersStartScreen /> } />
           <Route path="/rangers/game" element={<RangersGameScreen />} />
-          <Route path="/rangers/credits" element={<RangersCreditsScreen />} />        </Routes>
+          <Route path="/rangers/credits" element={<RangersCreditsScreen />} />        
+          <Route path="/stramash" element={<Stramash />} />        
+          <Route path="/about" element={<AboutScreen />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
       </Router>
     </GameProvider>
     </div>
