@@ -124,8 +124,11 @@ export default function SFWordle({ solution , clue, split, category}) {
         autoCapitalize="none"
         style={{
           position: 'absolute',
-          opacity: 0,           
-          pointerEvents: 'none', 
+          top: '-100px', 
+          left: '-100px',
+          height: '1px',
+          width: '1px',
+          pointerEvents: 'none',
         }}
       />
     </div>
