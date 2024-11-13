@@ -1,8 +1,31 @@
 .Heading {
-  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 0.1;
   text-align: center;
+  width: 100%;
 }
 
+.scottish-football, .simulators {
+  font-family: 'Gasoek One';
+}
+
+.scottish-football {
+  width: 100%;
+  font-size: 80px;
+}
+
+.scot-football-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.1;
+}
+
+.simulators {
+  font-size: 100px;
+}
 
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .scottish-football {
@@ -45,6 +68,11 @@
   }
 }
 
+@media (orientation: portrait){
+  .scot-football-header {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 1174px) {
   .scottish-football, .simulators {

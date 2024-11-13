@@ -4,11 +4,14 @@ function Title(){
 
 return (
   <div className="Heading">
-  <h1 style={{fontSize: 140, fontFamily: 'Gasoek One', }}>
+    <div className='scot-football-header'>
+  <h1>
   <span className="scottish-football">SCOTTISH</span></h1>
-  <h1 style={{fontSize: 140, fontFamily: 'Gasoek One', }}>
+  
+  <h1>
   <span className="scottish-football">FOOTBALL</span></h1>
-  <h1 style={{fontSize: 140, fontFamily: 'Gasoek One'}}>
+    </div>
+  <h1>
   <span className="simulators">Simulators</span></h1>
 </div>
 );

@@ -155,7 +155,7 @@ const signings = [
   {"name": "Big Bertha from the 1989 CBBC series 'Big Bertha'", "position": ", a Box-to-Box midfielder",  "image": bertha, "transfer": "on loan"},
 ]
 
-const signingsNumbers = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+const signingsNumbers = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
 const randomNumber = [0,1,2,3,4]
 

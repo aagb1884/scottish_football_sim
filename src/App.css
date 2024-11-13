@@ -26,10 +26,10 @@
 
 .footer-link {
   letter-spacing: normal;
-  color: green;
+  color: rgb(244, 219, 198);
   font-size: large;
-  -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: rgb(128, 0, 111);
   text-decoration: none;
   transition: 0.5s;
   margin: 0 2px;
@@ -42,10 +42,14 @@
   transition: 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+@media (orientation: portrait),
+screen and (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     height: 15vh;
     padding: 1%;
+  }
+  .footer-link {
+    font-size: 15px;
   }
 }

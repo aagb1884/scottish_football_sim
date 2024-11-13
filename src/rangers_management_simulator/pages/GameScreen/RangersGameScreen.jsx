@@ -3,8 +3,6 @@ import { useLocation } from "react-router-dom";
 import RangersMainComponent from "../../components/MainComponent/RangersMainComponent";
 import texts from "../../utils/texts";
 import "./rangersGameScreen.css";
-import LoadModal from "../../components/Modals/LoadModal";
-import SaveModal from "../../components/Modals/SaveModal";
 
 function RangersGameScreen() {
   const location = useLocation();
