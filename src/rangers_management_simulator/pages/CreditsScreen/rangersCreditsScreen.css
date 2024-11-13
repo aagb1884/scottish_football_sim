@@ -27,10 +27,10 @@ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,51,160,1) 28%, rgb
   margin: 0.5vw;
 }
 
-a:link {
+.gers-creditsScreen-text > ul > a:link {
   color: var(--gersSecondaryColor);
 }
-a:visited {
+.gers-creditsScreen-text > ul > a:visited {
   color: rgb(152, 2, 2);
   text-shadow: 1px white;
 }
