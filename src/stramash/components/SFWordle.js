@@ -31,7 +31,7 @@ export default function SFWordle({ solution , clue, split, category}) {
   useEffect(() => {
     const focusInput = () => {
       if (inputRef.current) {
-        inputRef.current.focus({ preventScroll: true });
+        inputRef.current.focus();
       }
     };
 
@@ -49,7 +49,7 @@ export default function SFWordle({ solution , clue, split, category}) {
 
   const refocusInput = () => {
     if (inputRef.current) {
-      inputRef.current.focus({ preventScroll: true });
+      inputRef.current.focus();
     }
   };
 
