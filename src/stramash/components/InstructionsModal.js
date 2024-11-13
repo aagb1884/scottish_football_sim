@@ -12,6 +12,7 @@ export default function InstructionsModal({showInstructionsModal, setShowInstruc
          <div className='stram-instructions'>
             <ul className='stram-instructions-list'>
               <li>You have to guess the name of a Scottish football club, ground or player.</li>
+              <li>You can play as often as you want, the answer isn't set daily.</li>
               <li>You have five (5) guesses.</li>
               <li>The keys on screen are for showing you what keys you've already tried, it isn't a working keyboard.</li>
               <li>You can ask for a clue, but: </li>

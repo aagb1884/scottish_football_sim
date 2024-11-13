@@ -25,34 +25,27 @@ export default function SFWordle({ solution , clue, split, category}) {
   const [showModal, setShowModal] = useState(false)
   const [showClue, setShowClue] = useState(false)
   const [showCategory, setShowCategory] = useState(false);
-  const [hasFocusedOnce, setHasFocusedOnce] = useState(false);
   const inputRef = useRef(null);
 
   // get keyboard on mobile/tablet
   useEffect(() => {
     const focusInput = () => {
-      if (inputRef.current && hasFocusedOnce) {
+      if (inputRef.current) {
         inputRef.current.focus({ preventScroll: true });
       }
     };
 
-    const onUserInteract = () => {
-      setHasFocusedOnce(true);
-      focusInput();
-    };
+    const timer = setTimeout(focusInput, 300); 
 
-    if (!hasFocusedOnce) {
-      setTimeout(onUserInteract, 300); 
-    }
-
-    window.addEventListener('touchstart', focusInput);
+    window.addEventListener('touchstart', focusInput); 
     window.addEventListener('click', focusInput);
 
     return () => {
-      window.removeEventListener('touchstart', focusInput);
+      clearTimeout(timer);
+      window.removeEventListener('touchstart', focusInput); 
       window.removeEventListener('click', focusInput);
     };
-  }, [hasFocusedOnce]);
+  }, []);
 
   const refocusInput = () => {
     if (inputRef.current) {
